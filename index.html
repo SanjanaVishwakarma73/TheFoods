@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HappyMeals - Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">HappyMeals</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="offers.html">Offers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header>HappyMeals</header>
+
+<div class="hero">
+  <h1>Welcome to HappyMeals!</h1>
+  <p>Delicious food delivered fresh to your doorstep.</p>
+  <a href="menu.html" class="btn">Order Now</a>
+
+  <!-- Personalized Welcome -->
+  <div id="welcomeUser" class="hidden"></div>
+</div>
+
+<div class="contest" id="contestSection">
+  <h2>Weekly Contest!!</h2>
+  <p>Join now for a chance to win <strong>free meals</strong> this week!</p>
+
+  <div id="contestForm">
+    <input type="text" id="name" placeholder="Enter your name" required><br>
+    <input type="email" id="email" placeholder="Enter your email" required><br>
+    <button class="btn" onclick="joinContest()">Join Contest</button>
+  </div>
+
+  <p id="contestMessage" class="success hidden"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
